@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Relevé FICTIF de démonstration AutoPro — IBAN, noms et montants inventés.
+     camt.053.001.08, compte CH00 0000 0000 0000 0000 0 (somme de contrôle invalide exprès), septembre 2026.
+     DEMO-CAMT-0001…0005 existent déjà dans les données de démonstration (« Déjà importé »); 0006 et 0007 sont nouveaux. -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.08">
+  <BkToCstmrStmt>
+    <GrpHdr>
+      <MsgId>DEMO-MSG-2026-09-25</MsgId>
+      <CreDtTm>2026-09-25T18:00:00+02:00</CreDtTm>
+    </GrpHdr>
+    <Stmt>
+      <Id>DEMO-STMT-2026-09</Id>
+      <ElctrncSeqNb>9</ElctrncSeqNb>
+      <CreDtTm>2026-09-25T18:00:00+02:00</CreDtTm>
+      <FrToDt><FrDtTm>2026-09-01T00:00:00+02:00</FrDtTm><ToDtTm>2026-09-25T23:59:59+02:00</ToDtTm></FrToDt>
+      <Acct>
+        <Id><IBAN>CH0000000000000000000</IBAN></Id>
+        <Ccy>CHF</Ccy>
+        <Ownr><Nm>Garage Exemple Sàrl</Nm></Ownr>
+      </Acct>
+      <Bal>
+        <Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp>
+        <Amt Ccy="CHF">50000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt><Dt>2026-08-31</Dt></Dt>
+      </Bal>
+      <Bal>
+        <Tp><CdOrPrtry><Cd>CLBD</Cd></CdOrPrtry></Tp>
+        <Amt Ccy="CHF">48446.03</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt><Dt>2026-09-25</Dt></Dt>
+      </Bal>
+      <Ntry>
+        <Amt Ccy="CHF">2400.00</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-03</Dt></BookgDt>
+        <ValDt><Dt>2026-09-03</Dt></ValDt>
+        <AcctSvcrRef>DEMO-CAMT-0006</AcctSvcrRef>
+        <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><AcctSvcrRef>DEMO-CAMT-0006</AcctSvcrRef><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <Amt Ccy="CHF">2400.00</Amt>
+            <CdtDbtInd>DBIT</CdtDbtInd>
+            <RltdPties><Cdtr><Pty><Nm>Régie immobilière exemple</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>LOY-2026-09</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <Amt Ccy="CHF">18.50</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-20</Dt></BookgDt>
+        <ValDt><Dt>2026-09-20</Dt></ValDt>
+        <AcctSvcrRef>DEMO-CAMT-0005</AcctSvcrRef>
+        <BkTxCd><Domn><Cd>ACMT</Cd><Fmly><Cd>MDOP</Cd><SubFmlyCd>CHRG</SubFmlyCd></Fmly></Domn></BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><AcctSvcrRef>DEMO-CAMT-0005</AcctSvcrRef><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <Amt Ccy="CHF">18.50</Amt>
+            <CdtDbtInd>DBIT</CdtDbtInd>
+            <RltdPties><Cdtr><Pty><Nm>Frais bancaires</Nm></Pty></Cdtr></RltdPties>
+          </TxDtls>
+        </NtryDtls>
+        <AddtlNtryInf>Frais de tenue de compte</AddtlNtryInf>
+      </Ntry>
+      <Ntry>
+        <Amt Ccy="CHF">250.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-22</Dt></BookgDt>
+        <ValDt><Dt>2026-09-22</Dt></ValDt>
+        <AcctSvcrRef>DEMO-CAMT-0007</AcctSvcrRef>
+        <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><AcctSvcrRef>DEMO-CAMT-0007</AcctSvcrRef><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <Amt Ccy="CHF">250.00</Amt>
+            <CdtDbtInd>CRDT</CdtDbtInd>
+            <RltdPties><Dbtr><Pty><Nm>Client exemple 3</Nm></Pty></Dbtr></RltdPties>
+            <RmtInf><Ustrd>Acompte réparation</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <Amt Ccy="CHF">648.60</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-23</Dt></BookgDt>
+        <ValDt><Dt>2026-09-23</Dt></ValDt>
+        <AcctSvcrRef>DEMO-CAMT-0003</AcctSvcrRef>
+        <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><AcctSvcrRef>DEMO-CAMT-0003</AcctSvcrRef><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <Amt Ccy="CHF">648.60</Amt>
+            <CdtDbtInd>CRDT</CdtDbtInd>
+            <RltdPties><Dbtr><Pty><Nm>Client exemple 6</Nm></Pty></Dbtr></RltdPties>
+            <RmtInf><Ustrd>Réparation freins arrière</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <Amt Ccy="CHF">778.32</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-23</Dt></BookgDt>
+        <ValDt><Dt>2026-09-23</Dt></ValDt>
+        <AcctSvcrRef>DEMO-CAMT-0004</AcctSvcrRef>
+        <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><AcctSvcrRef>DEMO-CAMT-0004</AcctSvcrRef><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <Amt Ccy="CHF">778.32</Amt>
+            <CdtDbtInd>DBIT</CdtDbtInd>
+            <RltdPties><Cdtr><Pty><Nm>Fournisseur pneus B</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>B-000456</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <Amt Ccy="CHF">337.79</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-24</Dt></BookgDt>
+        <ValDt><Dt>2026-09-24</Dt></ValDt>
+        <AcctSvcrRef>DEMO-CAMT-0002</AcctSvcrRef>
+        <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><AcctSvcrRef>DEMO-CAMT-0002</AcctSvcrRef><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <Amt Ccy="CHF">337.79</Amt>
+            <CdtDbtInd>CRDT</CdtDbtInd>
+            <RltdPties><Dbtr><Pty><Nm>Client exemple 8</Nm></Pty></Dbtr></RltdPties>
+            <RmtInf><Ustrd>Solde F-2026-0011</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <Amt Ccy="CHF">406.46</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-25</Dt></BookgDt>
+        <ValDt><Dt>2026-09-25</Dt></ValDt>
+        <AcctSvcrRef>DEMO-CAMT-0001</AcctSvcrRef>
+        <BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn></BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><AcctSvcrRef>DEMO-CAMT-0001</AcctSvcrRef><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <Amt Ccy="CHF">406.46</Amt>
+            <CdtDbtInd>CRDT</CdtDbtInd>
+            <RltdPties><Dbtr><Pty><Nm>Client exemple 1</Nm></Pty></Dbtr></RltdPties>
+            <RmtInf><Ustrd>F-2026-0009</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+    </Stmt>
+  </BkToCstmrStmt>
+</Document>
